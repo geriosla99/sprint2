@@ -1,0 +1,40 @@
+body{
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container{
+    margin: auto;
+    background: brown;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    width: inherit;
+    height: inherit;
+    background-color: ivory;
+    transition: opacity .5s;   
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
