@@ -13,9 +13,7 @@ body{
 
 }
 h1{
-    color: #ED213A;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ED213A;  
 
 }
 
@@ -29,4 +27,53 @@ h1{
 nav{
     align-items: center;
     justify-items: center;
+}
+
+#hero{
+    background: url(../images/cazador.jpg) no-repeat center;
+    width: 100%;
+    padding: 20px;
+}
+
+#matrix{
+    width: 80%;
+    padding: 25%;
+}
+
+.peliculas{
+    width: 80%;
+    padding: 5%;
+}
+ 
+#peliculas_accion{
+    width: 100%;
+    padding: 10vh;
+
+
+}
+
+#peliculas_comedia{
+    width: 100%;
+    padding: 10vh;
+}
+
+#peliculas_animacion{
+    width: 100%;
+    padding: 10vh;
+}
+
+.img{
+    width: 25%;
+    float: right;
+    padding: 10px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.descripcion{
+    color:#fff;
+    font-size: 4vh;
 }
