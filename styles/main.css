@@ -27,7 +27,7 @@ h1{
     text-decoration: none;
     padding: 4vw;
     font-size: 1.5vw;
-    text-align: center;
+    
 }
 
 nav{
@@ -39,6 +39,7 @@ nav{
     width: 100%;
     padding: 10vw;
     align-items: center;
+    text-align: center;
 }
 
 #hero{
@@ -83,6 +84,7 @@ a{
     font-size: 2vh;
     padding: 2vw;
     align-items: center;
+    text-align: center;
 }
 
 .link{
@@ -123,4 +125,8 @@ footer{
     justify-content: center;
     text-align: center;
     margin: auto;
+}
+
+#classpeli{
+    text-align: center;
 }
