@@ -27,7 +27,7 @@ h1{
     text-decoration: none;
     padding: 4vw;
     font-size: 1.5vw;
-    
+    text-align: center;
 }
 
 nav{
@@ -45,12 +45,16 @@ nav{
 #hero{
     background: url(../images/cazador.jpg) no-repeat center;
     width: 100%;
-    padding: 20px;
+    padding: 2vh 20px;
 }
 
 #matrix{
     width: 100%;
-    padding: 25%;
+    padding: 40vh 25%;
+}
+
+#section{
+    text-align: center;
 }
 
 .peliculas{
@@ -96,6 +100,7 @@ a{
     color: #000;
     padding: 1vw;
     font-size: 2vw;
+    border-radius: 5px;
 }
 
 footer{
@@ -121,10 +126,8 @@ footer{
 }
 
 #parrafo{
-    width: 60%;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #classpeli{
@@ -132,5 +135,11 @@ footer{
 }
 
 .espacio{
+    margin-top: 13.7vw;
     height: 80vh;
+}
+
+.titulo{
+    color: #fff;
+    padding: 10vh 0 0 30vh;
 }
