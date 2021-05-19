@@ -60,6 +60,8 @@ nav{
 .peliculas{
     width: 80%;
     padding: 5%;
+    display: flex;
+    flex-direction: column;
 }
  
 .peliculas_{
@@ -112,11 +114,14 @@ footer{
 .footer{
     padding: 4vw;
     font-size: 2vw;
+    
 }
 
 #formulario{
     width: 100%;
     text-align: center;
+    color: #fff;
+    font-size: 3vh;
 }
 
 .descri{
@@ -142,4 +147,31 @@ footer{
 .titulo{
     color: #fff;
     padding: 10vh 0 0 30vh;
+}
+
+@media screen and (max800px){
+    
+    .menu{
+        font-size: 10vh;
+    }
+
+    .peliculas_{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max600px) {
+
+    .img{
+        width: 60%;
+    }
+
+    .peliculas_{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
 }
