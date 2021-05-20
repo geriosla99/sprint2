@@ -7,8 +7,11 @@ body{
     background: black;
     font-family: roboto, sans-serif;
 }
+
+
+
 #header{
-    width: 100%;
+    width: 90vw;
     padding: 13px;
 }
 
@@ -35,9 +38,14 @@ nav{
     justify-items: center;
 }
 
-#botones{
-    width: 100%;
-    padding: 10vw;
+.elementos{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-self: center;
+}
+.elementos #botones{
     align-items: center;
     text-align: center;
 }
@@ -45,12 +53,21 @@ nav{
 #hero{
     background: url(../images/cazador.jpg) no-repeat center;
     width: 100%;
-    padding: 2vh 20px;
+    padding: 20px;
+
+
 }
 
 #matrix{
-    width: 100%;
-    padding: 40vh 25%;
+    width: 100vw;
+    height: 80vh;
+  
+}
+
+#matrix p{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 #section{
@@ -122,6 +139,7 @@ footer{
     text-align: center;
     color: #fff;
     font-size: 3vh;
+    margin-bottom: 10%;
 }
 
 .descri{
@@ -147,6 +165,11 @@ footer{
 .titulo{
     color: #fff;
     padding: 10vh 0 0 30vh;
+}
+
+#btn{
+    padding: 10px;
+    margin: 10px;
 }
 
 @media screen and (max800px){

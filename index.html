@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -14,81 +15,78 @@
         <h1>NETNET</h1>
         <nav id="nav">
             <a class="menu" href="index.html">Series</a>
-            <a class="menu" href="./peliculas.html">peliculas</a>
-            <a class="menu" href="./Mi_lista.html">Mi lista</a>
+            <a class="menu" href="peliculas/peliculas.html">peliculas</a>
+            <a class="menu" href="peliculas/Mi_lista.html">Mi lista</a>
         </nav>
     </header>
     <!-- 
         Aqui va la parte que se ve de matrix
      -->
-    <div id="hero">
-        <section id="matrix">
-            <p class="clasificacion">
-                accion . comedia . drama
-            </p>
-            <span id="botones">
-                <a id="repro" class="link" href="">Reproducir</a>
-                <a class="link" href="./peliculas/Mi_lista.html">Mi lista</a>
-                <a class="link" href="">info</a>
-                <!--<button id="reproducir" class="boton">Reproducir</button>
-                <button id="lista" class="boton">Mi lista</button>
-                <button id="info" class="boton">info</button>-->
-            </span>
-        </section>
-    </div>
-    <!-- los sliders de las peliculas -->
+    <div class="container">
+        <div id="hero">
+            <section id="matrix">
+               
+            </section>
+            <div class="elementos">
+              
+                <span id="botones">
+                    <a id="repro" class="link" href="#">Reproducir</a>
+                    <a class="link" href="peliculas/Mi_lista.html">Mi lista</a>
+                    <a class="link" href="#">info</a>
+                    <a class="link" href="peliculas/Mi_lista.html">comedia</a>
+                    <a class="link" href="#">accion</a>
+            </div>
+        </div>
+        <!-- los sliders de las peliculas -->
 
-    <div class="peliculas">
-        <p class="descripcion">Peliculas de acción</p>
-        <div class="peliculas_">
-            <img class="img" src="./images/baby_driver.jpg" alt="">
-            <img class="img" src="./images/blood.jpg" alt="">
-            <img class="img" src="./images/expendables.jpg" alt="">
-            <img class="img" src="./images/nideco.jpg" alt="">
-            <img class="img" src="./images/Rapidosyfuriosos.jpg" alt="">
+        <div class="peliculas">
+            <p class="descripcion">Peliculas de acción</p>
+            <div class="peliculas_">
+                <img class="img" src="./images/baby_driver.jpg" alt="">
+                <img class="img" src="./images/blood.jpg" alt="">
+                <img class="img" src="./images/expendables.jpg" alt="">
+                <img class="img" src="./images/nideco.jpg" alt="">
+                <img class="img" src="./images/Rapidosyfuriosos.jpg" alt="">
+            </div>
+            <p class="descripcion">Peliculas de comedia</p>
+            <div class="peliculas_">
+                <img class="img" src="./images/sexyporaccidente.jpg" alt="">
+                <img class="img" src="./images/fools.jpg" alt="">
+                <img class="img" src="./images/talvez.jpg" alt="">
+                <img class="img" src="./images/vida.jpg" alt="">
+                <img class="img" src="./images/nideco.jpg" alt="">
+            </div>
+            <p class="descripcion">Peliculas animadas</p>
+            <div class="peliculas_">
+                <img class="img" src="./images/lorax.jpg" alt="">
+                <img class="img" src="./images/intensamente.jpg" alt="">
+                <img class="img" src="./images/sing.jpg" alt="">
+                <img class="img" src="./images/up.jpg" alt="">
+                <img class="img" src="./images/sirenita.jpg" alt="">
+            </div>
         </div>
-        <p class="descripcion">Peliculas de comedia</p>
-        <div class="peliculas_">
-            <img class="img" src="./images/sexyporaccidente.jpg" alt="">
-            <img class="img" src="./images/fools.jpg" alt="">
-            <img class="img" src="./images/talvez.jpg" alt="">
-            <img class="img" src="./images/vida.jpg" alt="">
-            <img class="img" src="./images/nideco.jpg" alt="">
-        </div>
-        <p class="descripcion">Peliculas animadas</p>
-        <div class="peliculas_">
-            <img class="img" src="./images/lorax.jpg" alt="">
-            <img class="img" src="./images/intensamente.jpg" alt="">
-            <img class="img" src="./images/sing.jpg" alt="">
-            <img class="img" src="./images/up.jpg" alt="">
-            <img class="img" src="./images/sirenita.jpg" alt="">
-        </div>
-    </div>
 
-    <!--El formulario-->
-    <div id="formulario">
-        <form>
-            <p>Unete! Suscribete y mira peliculas nuevas cada semana!!!</p>
-            <label for="">Nombre</label><br>
-            <input class="entradas" type=""><br>
-            <label for="">Apellido</label><br>
-            <input class="entradas" type="text"><br>
-            <label for="">Correo electronico</label><br>
-            <input class="entradas" type="text"><br>
-            <label for="">Contraseña</label><br>
-            <input class="entradas" type="text">
-        </form>
+        <!--El formulario-->
+        <div id="formulario">
+            <form>
+                <p>Unete! Suscribete y mira peliculas nuevas cada semana!!!</p>
+                <label for="">Nombre*</label><br>
+                <input class="entradas" id="nombre" type="" required><br>
+                <label for="">Apellido*</label><br>
+                <input class="entradas" id="apellido" type="text" required><br>
+                <label for="">Correo electronico*</label><br>
+                <input class="entradas" id="email" type="text" required><br>
+                <label for="">Contraseña*</label><br>
+                <input class="entradas" id="contraseña" type="password" required><br>
+                <input type="button" onclick="enviar()" value="Enviar">
+            </form>
+        </div>
     </div>
     <footer>
-        <a class="footer" href="#header">Inicio</a>
+        <a class="footer" href="">Inicio</a>
         <a class="footer" href="">Proximamente</a>
         <a class="footer" href="">Buscar</a>
-        <a class="footer" href="">Descargar</a>
-        <!--<button class="botonfooter">Inicio</button>
-        <button class="botonfooter">Proximamente</button>
-        <button class="botonfooter">Buscar</button>
-        <button class="botonfooter">Descarga</button>
-       -->
+        <a class="footer" href="">Descargar</a>      
     </footer>
 </body>
 
